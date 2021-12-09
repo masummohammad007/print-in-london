@@ -1,0 +1,14 @@
+.custom-width{
+    width:100px;
+    height:50px;
+}
+.bg-custom{
+    background: rgba(0,0,0,0) linear-gradient(120deg,#171717 62%,#a0c716 32%) repeat scroll 0 0;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.custom-space{
+    display: inline-block;
+    padding-left: 10px;
+}
