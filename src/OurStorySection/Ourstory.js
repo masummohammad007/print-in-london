@@ -2,7 +2,7 @@ import React from 'react';
 import './Ourstory.css'
 const Ourstory = () => {
     return (
-        <div className=" col-md-12 bg-warning w-100 h-50 story-custom m-auto ">
+        <div className=" col-md-12 background-custom-our-story w-100 h-50 story-custom m-auto text-white">
             <div className="container">
             <div className="w-50 ">
                 <h1 className="">Our Story</h1>

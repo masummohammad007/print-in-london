@@ -1,0 +1,16 @@
+.custom-img{
+    width: 220px;
+    height: 200px;
+}
+th{
+    font-weight: bold;
+    font-size: 25px;
+    background: rgb(64, 31, 252);
+}
+tr td{
+    font-weight: bold;
+    font-size: 18px;
+}
+.img2{
+    margin-left: 35px;
+}

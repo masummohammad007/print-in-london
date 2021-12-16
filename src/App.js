@@ -1,19 +1,25 @@
-import Header from "./Header/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Banner from "./Banner";
-import Topbar from "./Topbar/Topbar";
-import Services from "./AllServices/Services";
-import Ourstory from "./OurStorySection/Ourstory";
-import TestimonialPage from "./Testimonial/TestimonialPage";
+import Home from "./HomeSection/Home";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import SingleProduct from "./SinglaProductPage/SingleProduct/SingleProduct";
+import ServicesPage from "./ServicesPage/ServicesPage";
+
+
+
 function App() {
   return (
 <div className="App">
-  <Topbar></Topbar>
-   <Header></Header>
-   <Banner></Banner>
-   <Services></Services>
-   <Ourstory></Ourstory>
-   <TestimonialPage></TestimonialPage>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="home" element={<Home />} />
+    <Route path="/services" element={<ServicesPage/>}/>
+    <Route path="/service/:id" element={<SingleProduct />} />
+  </Routes>
+  </BrowserRouter>
 </div>
   );
 }

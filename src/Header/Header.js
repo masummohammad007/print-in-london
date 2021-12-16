@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Nav , Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav , Navbar,} from 'react-bootstrap';
 import './Header.css';
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -16,10 +17,10 @@ const Header = () => {
     
     </Nav>
     <Nav>
-            <Nav.Link className="custom-hover text-white" href="#features">Home</Nav.Link>
-      <Nav.Link className="custom-hover text-white" href="#pricing">Our services</Nav.Link>
-      <Nav.Link className="custom-hover text-white" href="#pricing">How to place order</Nav.Link>
-      <Nav.Link className="custom-hover text-white" href="#pricing">About</Nav.Link>
+      < Link className="custom-hover text-white m-2" to="/home">Home</Link>
+      < Link className="custom-hover text-white m-2" to="/services">Services</Link>
+      < Link className="custom-hover text-white m-2" to="/how-to-place-order">How to place order</Link>
+      < Link className="custom-hover text-white m-2" to="/about">About</Link>
     </Nav>
   </Navbar.Collapse>
   </Container>
